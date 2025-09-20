@@ -12,7 +12,7 @@ I'm not going to support or maintain it.
 
 In `/kubernetes` directory I putted files which I use to deploy inastructure on self-hosted k8s cluster. All files have comments, but keep in mind, that my k8s cluster uses [Traffik CRD](https://doc.traefik.io/traefik/providers/kubernetes-crd/) and [local-path-provisioner](https://github.com/rancher/local-path-provisioner) for PVC.
 
-Chat application is scalable and should work properly with many replicas. Live demo of application is available at https://chatapp.kbac.dev/
+Chat application is scalable and should work properly with many replicas. Live demo of application is available at https://chatapp.front.aurbac.dev/
 
 ## How to run locally
 
