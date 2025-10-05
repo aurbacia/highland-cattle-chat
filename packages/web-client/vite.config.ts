@@ -15,11 +15,13 @@ export default defineConfig(({ mode }) => {
     worker: {
       format: "es",
     },
-    server: {
-      https: {
-        key: fs.readFileSync(env.HTTPS_KEY_PATH),
-        cert: fs.readFileSync(env.HTTPS_CERT_PATH),
+    ...(env.NO_LOCAL_SERVER && {
+      server: {
+        https: {
+          key: fs.readFileSync(env.HTTPS_KEY_PATH),
+          cert: fs.readFileSync(env.HTTPS_CERT_PATH),
+        },
       },
-    },
+    }),
   };
 });
